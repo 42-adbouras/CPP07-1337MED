@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: adbouras <adbouras@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/05/21 12:10:14 by adbouras          #+#    #+#              #
-#    Updated: 2025/05/21 13:15:09 by adbouras         ###   ########.fr        #
+#    Created: 2025/05/21 13:14:46 by adbouras          #+#    #+#              #
+#    Updated: 2025/05/21 13:14:55 by adbouras         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ CC		=	c++
 
 CFLAGS	=	-Wall -Wextra -Werror -Wshadow -std=c++98
 
-NAME	=	whatever
+NAME	=	iter
 
 SRC		=	$(shell find source -name  '*.cpp')
 
