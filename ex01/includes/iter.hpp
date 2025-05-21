@@ -15,3 +15,18 @@
 #include <iostream>
 #include <string>
 
+template<typename Type>
+void	iter(Type* arr, size_t len, void (*func)(Type&))
+{
+	for (size_t i = 0; i < len; i++) {
+		func(arr[i]);
+	}
+}
+
+template<typename Type>
+void	iter(const Type* arr, size_t len, void (*func)(const Type&))
+{
+	for (size_t i = 0; i < len; i++) {
+		func(arr[i]);
+	}
+}
