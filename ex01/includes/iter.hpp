@@ -6,7 +6,7 @@
 /*   By: adbouras <adbouras@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 13:16:07 by adbouras          #+#    #+#             */
-/*   Updated: 2025/05/21 13:17:38 by adbouras         ###   ########.fr       */
+/*   Updated: 2025/05/22 14:48:56 by adbouras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 #include <iostream>
 #include <string>
+#include <cmath>
 
 template<typename Type>
 void	iter(Type* arr, size_t len, void (*func)(Type&))
 {
+	std::cout << "[REGULAR ITER]" << std::endl;
 	for (size_t i = 0; i < len; i++) {
 		func(arr[i]);
 	}
@@ -26,7 +28,20 @@ void	iter(Type* arr, size_t len, void (*func)(Type&))
 template<typename Type>
 void	iter(const Type* arr, size_t len, void (*func)(const Type&))
 {
+	std::cout << "[CONST ITER]" << std::endl;
 	for (size_t i = 0; i < len; i++) {
 		func(arr[i]);
 	}
+}
+
+template<typename Type>
+void	printElement(const Type& type)
+{
+	std::cout << "[" << type << "]" << std::endl;
+}
+
+template<typename Type>
+void	floorElement(Type& type)
+{
+	type = std::floor(type);
 }

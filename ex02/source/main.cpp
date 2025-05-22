@@ -5,22 +5,25 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: adbouras <adbouras@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/21 13:15:15 by adbouras          #+#    #+#             */
-/*   Updated: 2025/05/22 12:46:57 by adbouras         ###   ########.fr       */
+/*   Created: 2025/05/22 12:50:10 by adbouras          #+#    #+#             */
+/*   Updated: 2025/05/22 17:56:01 by adbouras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "iter.hpp"
+#include "Array.hpp"
 
 int	main( void )
 {
-	double		doubleArr[] = { 13.37, 42.42, 20.25 };
-	const float	constFArr[] = { 13.37f, 42.42f, 20.25f };
-
-	::iter(doubleArr, 3, printElement);
-	::iter(doubleArr, 3, floorElement);
-	::iter(doubleArr, 3, printElement);
-
-	::iter(constFArr, 3, printElement);
+	Array<float> a(10);
+	for (int i = 0; i < 10; i++) {
+		a[i] = i + 1;
+	}
+	std::cout << a << std::endl;
+	try {
+		std::cout << a[15] << std::endl;
+		
+	} catch (std::exception& e) {
+		std::cout << e.what() << std::endl;
+	}
 	return (0);
 }
