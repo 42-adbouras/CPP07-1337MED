@@ -6,7 +6,7 @@
 /*   By: adbouras <adbouras@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 13:16:07 by adbouras          #+#    #+#             */
-/*   Updated: 2025/05/22 14:48:56 by adbouras         ###   ########.fr       */
+/*   Updated: 2025/05/24 10:32:46 by adbouras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	printElement(const Type& type)
 }
 
 template<typename Type>
-void	floorElement(Type& type)
+void	floorDecimal(Type& type)
 {
 	type = std::floor(type);
 }

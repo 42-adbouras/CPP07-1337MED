@@ -6,7 +6,7 @@
 /*   By: adbouras <adbouras@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 12:50:10 by adbouras          #+#    #+#             */
-/*   Updated: 2025/05/22 17:56:01 by adbouras         ###   ########.fr       */
+/*   Updated: 2025/05/23 17:33:45 by adbouras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,13 @@
 
 int	main( void )
 {
-	Array<float> a(10);
-	for (int i = 0; i < 10; i++) {
-		a[i] = i + 1;
-	}
-	std::cout << a << std::endl;
 	try {
+		Array<float> a(10);
+		for (int i = 0; i < 10; i++) {
+			a[i] = i + 1;
+		}
+		std::cout << a << std::endl;
 		std::cout << a[15] << std::endl;
-		
 	} catch (std::exception& e) {
 		std::cout << e.what() << std::endl;
 	}

@@ -6,7 +6,7 @@
 /*   By: adbouras <adbouras@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 16:04:03 by adbouras          #+#    #+#             */
-/*   Updated: 2025/05/22 17:51:25 by adbouras         ###   ########.fr       */
+/*   Updated: 2025/06/02 16:11:04 by adbouras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,3 +63,18 @@ unsigned int	Array<T>::size( void ) const { return (this->_size); }
 
 template<class T>
 const T*	Array<T>::data( void ) const { return (this->_arr); }
+
+template<class T>
+std::ostream&	operator<<( std::ostream& COUT, const Array<T>& right )
+{
+	const T*	temp = right.data();
+
+	COUT << "[";
+	for (unsigned int i = 0; i < right.size(); i++) {
+		COUT << temp[i];
+		if (i < right.size() - 1)
+			COUT << ", ";
+	}
+	COUT << "]";
+	return (COUT);
+}
