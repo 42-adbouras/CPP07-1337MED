@@ -6,7 +6,7 @@
 #    By: adbouras <adbouras@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/22 12:48:10 by adbouras          #+#    #+#              #
-#    Updated: 2025/05/22 12:48:18 by adbouras         ###   ########.fr        #
+#    Updated: 2025/06/03 13:05:02 by adbouras         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ NAME	=	array
 
 SRC		=	$(shell find source -name  '*.cpp')
 
-NCLD	=	$(shell find includes -name '*.hpp')
+NCLD	=	$(shell find includes -name '*.hpp' -o -name '*.tpp')
 
 HEADERS	=	-I ./includes
 

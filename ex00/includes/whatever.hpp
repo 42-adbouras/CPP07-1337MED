@@ -6,20 +6,20 @@
 /*   By: adbouras <adbouras@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 12:16:49 by adbouras          #+#    #+#             */
-/*   Updated: 2025/05/21 19:54:06 by adbouras         ###   ########.fr       */
+/*   Updated: 2025/06/03 13:10:06 by adbouras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
+#include <iostream>
+#include <string>
+#include <algorithm>
+
 template<typename Type>
 void	swap( Type& left, Type& right )
 {
-	Type	temp;
-
-	temp  = left;
-	left  = right;
-	right = temp;
+	std::swap(left, right);
 }
 
 template<typename Type>

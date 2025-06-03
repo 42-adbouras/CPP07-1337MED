@@ -6,12 +6,11 @@
 /*   By: adbouras <adbouras@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 12:12:56 by adbouras          #+#    #+#             */
-/*   Updated: 2025/05/21 13:09:57 by adbouras         ###   ########.fr       */
+/*   Updated: 2025/06/03 13:10:11 by adbouras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "whatever.hpp"
-#include <iostream>
 
 int	main( void )
 {
