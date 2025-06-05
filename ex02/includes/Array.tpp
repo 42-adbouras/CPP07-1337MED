@@ -6,7 +6,7 @@
 /*   By: adbouras <adbouras@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 16:04:03 by adbouras          #+#    #+#             */
-/*   Updated: 2025/06/03 13:06:33 by adbouras         ###   ########.fr       */
+/*   Updated: 2025/06/05 17:42:00 by adbouras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Array<T>::Array( unsigned int n ) : _size(n), _arr(new T[n]) { return ; }
 
 template<class T>
 Array<T>::Array( const Array& right ) : _size(right._size), _arr(new T[this->_size]) {
-	for (unsigned int i = 0; i < right.size; i++) {
+	for (unsigned int i = 0; i < right.size(); i++) {
 		this->_arr[i] = right._arr[i];
 	}
 }
